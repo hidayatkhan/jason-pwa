@@ -4,7 +4,7 @@ import { MailOutlined, AppstoreOutlined, SettingOutlined, HeartOutlined } from '
 import { Menu } from 'antd';
 // import "./Dashboard.css";
 
-import NotFound from "./404";
+import NotFound from "./Screens/404";
 import Contact from "./Screens/Contact";
 import Setting from "./Screens/Setting";
 import Help from "./Screens/Help";

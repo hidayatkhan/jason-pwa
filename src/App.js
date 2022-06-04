@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Switch, Route, BrowserRouter as Router, Redirect } from "react-router-dom";
 
-import Login from "./Login";
+import Login from "./Screens/Login";
 import Splash from "./Screens/Splash"
 import 'antd/dist/antd.min.css'
 import ProtectedRoute from './ProtectedRoute'

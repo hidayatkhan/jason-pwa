@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import { Redirect, Switch, Route, Link, withRouter } from "react-router-dom";
 import { MailOutlined, AppstoreOutlined, SettingOutlined, HeartOutlined } from '@ant-design/icons';
-import { Button, Menu } from 'antd';
+import { Menu } from 'antd';
 // import "./Dashboard.css";
-import Master from "./Master";
-import Pos from "./Pos";
-import IndexDashboard from "./IndexDashboard";
+
 import NotFound from "./404";
 import Contact from "./Screens/Contact";
 import Setting from "./Screens/Setting";

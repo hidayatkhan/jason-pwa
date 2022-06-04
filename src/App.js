@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Switch, Route, BrowserRouter as Router, Link, Redirect } from "react-router-dom";
+import { Switch, Route, BrowserRouter as Router, Redirect } from "react-router-dom";
 
 import Login from "./Login";
 import Splash from "./Screens/Splash"

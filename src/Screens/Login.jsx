@@ -74,15 +74,7 @@ const App = () => {
               span: 16,
             }}
           >
-            <Checkbox>Remember me</Checkbox>
-          </Form.Item>
 
-          <Form.Item
-            wrapperCol={{
-              offset: 8,
-              span: 16,
-            }}
-          >
             <Button type="primary" htmlType="submit" onClick={() => history.push("/dashboard")}>
               Login
             </Button>

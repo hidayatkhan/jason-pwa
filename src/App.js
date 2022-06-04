@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Login from "./Screens/Login";
+import { Switch, Route, BrowserRouter as Router, Link, Redirect } from "react-router-dom";
+
+import Login from "./Login";
 import Splash from "./Screens/Splash"
-import Contact from './Screens/Contact'
 import 'antd/dist/antd.min.css'
-import Router from './components/Router';
+import ProtectedRoute from './ProtectedRoute'
+import Dashboard from './Dashboard';
 
 const App = () => {
 
@@ -19,7 +21,22 @@ const App = () => {
   return isLoading ?
     <Splash /> :
     <>
-      <Router />
+      <Router>
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <ProtectedRoute path="/dashboard">
+            <Dashboard />
+          </ProtectedRoute>
+          <Route exact path="/">
+            <Redirect exact from="/" to="dashboard" />
+          </Route>
+          <Route path="*">
+            <Redirect from="/" to="dashboard" />
+          </Route>
+        </Switch>
+      </Router>
     </>
 }
 

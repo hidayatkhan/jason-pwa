@@ -1,17 +1,17 @@
 import React from 'react';
 import { Form, Input, Button, Checkbox, Row } from 'antd';
-import {
-  Switch,
-  Route,
-  Link,
-  Redirect,
-  useHistory
-} from "react-router-dom";
-import Setting from "./Setting"
-import Contact from "./Contact"
-import Login from "./Login"
-import Help from './Help';
-import Dashboard from './Dashboard';
+// import {
+//   Switch,
+//   Route,
+//   Link,
+//   Redirect,
+//   useHistory
+// } from "react-router-dom";
+// import Setting from "./Setting"
+// import Contact from "./Contact"
+// import Login from "./Login"
+// import Help from './Help';
+// import Dashboard from '../Dashboard';
 
 const App = () => {
   const history = useHistory();

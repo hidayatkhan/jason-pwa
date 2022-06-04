@@ -1,6 +1,6 @@
-import React  from 'react';
-import { ClockLoader } from 'react-spinners';
-import {Row} from 'antd'
+import React from 'react';
+import ClipLoader from "react-spinners/ClipLoader";
+import { Row } from 'antd'
 // Importing loader
 
 const Splash = () => {
@@ -10,13 +10,13 @@ const Splash = () => {
   margin: 0 auto;
   border-color: red;
   `;
-    return  (
-      <>
-      <Row type="flex" justify="center" align="middle" style={{minHeight: '90vh'}}>
-      <ClockLoader color={'#A5BECC'} css={override} size={100} /> 
+  return (
+    <>
+      <Row type="flex" justify="center" align="middle" style={{ minHeight: '90vh' }}>
+        <ClipLoader color={'#A5BECC'} css={override} size={100} />
       </Row>
-      </>
-      )
+    </>
+  )
 }
 
 export default Splash;

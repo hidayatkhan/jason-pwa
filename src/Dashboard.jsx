@@ -28,7 +28,7 @@ class Dashboard extends Component {
     const { match } = this.props;
     return (
       <>
-
+        {/*Menus*/}
         <Menu mode="horizontal" defaultSelectedKeys={['contact']}  >
           <Menu.Item key="contact" icon={<MailOutlined />}>
             <Link to={`${match.path}/contact`}>
